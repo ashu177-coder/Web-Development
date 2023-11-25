@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External css -->
+    <!-- If we link css here, Internal css wins over external -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+    <!-- Internal CSS -->
+    <!-- h1 = Selector, color = Property, green = value -->
+    
+    <!-- <style>
+        h1{
+            color:green;
+        }
+
+        /* In this case of conflict of interest, Inline wins over Internal css */
+        /* But still for applying internal styling over inline, after the value insert '!important' */
+        /* p{
+            background-color: blueviolet !important;
+        } */
+
+        p{
+            background-color: blue;
+        }
+    </style> -->
+
+        <!-- Linking here makes external win over internal -->
+        <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        /* Element selector */
+        p{
+            color: brown;
+        }
+
+        /* ID selector */
+        #article1{
+            background-color: green;
+        }
+
+        /* Class selector */
+        .paraClass{
+            background-color: yellow;
+            background-color: red;
+            background-color: aqua;
+        }
+
+        /* Group selector - Targeting multiple tags */
+        p,article{
+            width: 500px;
+        }
+
+        /* targeting paraClass class of only the paragraphs */
+        p.paraClass{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>Welcome to CodeHelp</h1>
+
+    <!-- Inline CSS -->
+    <!-- <p style="background-color: yellow;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis minus quia nemo atque explicabo facere eligendi laborum adipisci, eveniet repudiandae.</p>
+
+    <p style="color: greenyellow;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ab iure consequatur autem laboriosam molestiae perferendis nostrum minima recusandae, earum cum debitis magnam in modi eveniet at? Saepe, odio voluptatem.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse odio, blanditiis porro atque, obcaecati aut rem dicta maiores dolore suscipit placeat impedit tempore. Distinctio maiores quis facilis? Pariatur possimus nesciunt blanditiis numquam esse tenetur natus consequuntur eligendi, itaque sit sunt ullam quisquam expedita laboriosam, incidunt non soluta tempora fugiat nobis.</p> --> 
+<!-- 
+    <footer>
+        I am footer.
+    </footer> -->
+
+
+    <h1>Welcome to Codehelp 2.0</h1>
+    <p class="paraClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ex culpa provident non dolorum nulla eligendi ullam omnis eaque veritatis nobis voluptas sequi, atque totam vero? Soluta aliquam expedita, fugit, repellendus ad tempora repellat quidem ducimus, nisi nobis necessitatibus vero eos sequi maxime dignissimos cumque. Voluptatum, totam! Blanditiis, minima eos.</p>
+
+    <article id="article1" class="paraClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam explicabo eos molestias quidem eveniet provident ipsum, accusantium quas veniam adipisci quod sit voluptas suscipit earum dolore iure autem reprehenderit possimus nobis nulla iusto similique doloribus! Labore incidunt facere asperiores. Nesciunt itaque rerum distinctio magni enim error recusandae. Quis, enim in!</article>
+
+    <p class="paraClass">My name is Ashutosh.</p>
+
+    <p>My name is Ashutosh Sangamlal Mishra.</p>
+
+    <!-- Selectors = Way to target html single or multiple elements for styling
+    1. Element selector = Aiming the tags for styling, eg = h1, p, article etc 
+    2. ID selector = Aiming the particular id for styling
+    3. Class selector = Aiming the class for styling
+    4. Group selector -->
+</body>
+</html>
